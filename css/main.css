@@ -1,0 +1,15 @@
+/*
+#181818
+#2f2f2f
+#474747
+#5e5e5e
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #000000;
+}/*# sourceMappingURL=main.css.map */
