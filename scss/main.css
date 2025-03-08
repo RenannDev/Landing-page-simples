@@ -51,34 +51,34 @@ img {
   border-radius: 60px;
 }
 
-li a {
+.links-navbar > .links {
   list-style: none;
   color: white;
   text-decoration: none;
   font-size: 0.75rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-li a:hover {
+.links-navbar > .links:hover {
   font-weight: bold;
 }
 
-li:nth-last-child(2) {
+.links-navbar:nth-last-child(2) {
   padding-right: 10px;
 }
-li:nth-last-child(2)::after {
+.links-navbar:nth-last-child(2)::after {
   content: "";
   position: absolute;
-  top: 3%;
+  top: 2.9%;
   transform: translateX(120%);
   width: 7px;
   height: 7px;
-  background-color: rgb(153, 255, 0);
+  background-color: rgb(148, 255, 7);
   border-radius: 50%;
 }
 
 .navbar-topo-entrar {
   padding: 0px 0.5rem;
-  width: 75px;
+  width: 70px;
   border-radius: 60px;
   color: white;
   background-color: rgb(34, 34, 34);
@@ -91,7 +91,6 @@ li:nth-last-child(2)::after {
   content: "";
   position: absolute;
   top: 1.4%;
-  right: 1%;
   width: 20px;
   height: 20px;
   background-image: url("https://img.freepik.com/free-photo/happy-cheerful-female-customer-posing-camera_74855-2837.jpg?t=st=1741304304~exp=1741307904~hmac=ca01ee3cf04f5dc198b602d3d7c2d8e5e9e25b9d46d2a706d0697bfac07e2908&w=1800");
@@ -101,4 +100,58 @@ li:nth-last-child(2)::after {
 }
 .navbar-topo-entrar:hover {
   font-weight: bold;
+}
+
+/*.nav-banner-principal{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-inline: 8px;
+  align-items: center;
+*/
+h1 {
+  color: white;
+  font-size: 7rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+  font-weight: normal;
+  position: relative;
+  z-index: -1;
+}
+
+.banner {
+  margin-top: -25px;
+  margin-inline: auto;
+  width: 98.5vw;
+  background-image: url("https://cdn.leonardo.ai/users/ac05dbc4-0711-4c14-a6a9-e462c5bb5066/generations/d853426f-5015-4fa7-8f50-36a56c48b906/Default_1950_super_panavision_70_robot_similar_like_bender_fr_0.jpg");
+  height: 56vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -1px 15px 15px rgb(0, 0, 0);
+  z-index: 1;
+}
+.banner > .prompt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 40px;
+  background-color: hsla(100, 100%, 100%, 0.2);
+  border-radius: 50px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  filter: blur(1px);
+  isolation: isolate;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  overflow: hidden;
+  margin-bottom: 7rem;
 }/*# sourceMappingURL=main.css.map */
