@@ -26,16 +26,16 @@ body {
 .ia-sidebar-topo {
   background-color: orange;
   border-radius: 60px;
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 img {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 
 .navbar-topo-links {
@@ -47,7 +47,7 @@ img {
   color: white;
   text-decoration: none;
   background-color: rgb(34, 34, 34);
-  width: 380px;
+  width: 340px;
   border-radius: 60px;
 }
 
@@ -55,8 +55,11 @@ li a {
   list-style: none;
   color: white;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+li a:hover {
+  font-weight: bold;
 }
 
 li:nth-last-child(2) {
@@ -67,31 +70,35 @@ li:nth-last-child(2)::after {
   position: absolute;
   top: 3%;
   transform: translateX(120%);
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   background-color: rgb(153, 255, 0);
   border-radius: 50%;
 }
 
 .navbar-topo-entrar {
   padding: 0px 0.5rem;
-  width: 80px;
+  width: 75px;
   border-radius: 60px;
   color: white;
   background-color: rgb(34, 34, 34);
   text-align: start;
   border: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.75rem;
 }
 .navbar-topo-entrar::after {
   content: "";
   position: absolute;
   top: 1.4%;
-  right: 0.8%;
-  width: 25px;
-  height: 25px;
+  right: 1%;
+  width: 20px;
+  height: 20px;
   background-image: url("https://img.freepik.com/free-photo/happy-cheerful-female-customer-posing-camera_74855-2837.jpg?t=st=1741304304~exp=1741307904~hmac=ca01ee3cf04f5dc198b602d3d7c2d8e5e9e25b9d46d2a706d0697bfac07e2908&w=1800");
   border-radius: 50%;
   background-size: cover;
   background-position: center;
+}
+.navbar-topo-entrar:hover {
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
