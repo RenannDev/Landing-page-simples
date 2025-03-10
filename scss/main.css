@@ -154,4 +154,56 @@ h1 {
           backdrop-filter: blur(2px);
   overflow: hidden;
   margin-bottom: 7rem;
+}
+
+#menu-de-nav {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 800px;
+  height: 45px;
+  border-radius: 50px;
+  margin-top: -28px;
+}
+#menu-de-nav > .menu-de-nav-lista {
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: -1rem;
+}
+#menu-de-nav .menu-de-nav-item {
+  width: 130px;
+  height: 40px;
+  text-decoration: none;
+  list-style: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-right: 2px;
+}
+#menu-de-nav .menu-de-nav-item a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+#menu-de-nav .menu-de-nav-item {
+  background-color: rgba(0, 0, 0, 0.866);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+.content > .subtitulo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  margin-top: 3rem;
 }/*# sourceMappingURL=main.css.map */
