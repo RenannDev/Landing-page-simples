@@ -22,7 +22,7 @@ body{
   justify-content: space-between;
   
   margin-top: 0.5rem;
-  width: 100vw;
+  width: 99vw;
   padding-inline: 8px;
  
 }
@@ -135,7 +135,7 @@ body{
  .banner{  
     margin-top: -25px;
     margin-inline: auto;
-    width: 98.5vw;
+    width: 97.5vw;
     background-image: url("https://cdn.leonardo.ai/users/ac05dbc4-0711-4c14-a6a9-e462c5bb5066/generations/d853426f-5015-4fa7-8f50-36a56c48b906/Default_1950_super_panavision_70_robot_similar_like_bender_fr_0.jpg");
     height: 56vh;
     background-size: cover;
@@ -225,45 +225,125 @@ body{
 
 /// primeiro conteiner de conteudo
 
-.content{
+.content {
   display: flex;
   align-items: center;
   flex-direction: column;
- background-color: white;
- padding: 8px;
+  padding: 8px;
+  width: 90vw;
+  margin-inline: auto;
 
-  & > .subtitulo{
- 
-    font-family: $fonte-principal;
-    font-size: 30px;
+  & > .subtitulo {
+    font-family: $fonte-principal; // Certifique-se de que essa variável está definida
+    font-size: 34px;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-top: 3rem;
-   }
+    font-weight: normal;
+  }
 
-/// alterações de hoje 11/03
-  & >.content-1{
-    display: flex;
+  & > .content-1 { // Adicionei o ponto para indicar que é uma classe
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr  1fr;
+    padding: 10px 0px 10px 0px;
 
 
-    .content-items{
-
-
-
-      & > li{
-
-        list-style: none;
-
-      } & img{
-        
-      }
-
+    .item-paragrafo-content {
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $fonte-principal;
+      color: rgb(255, 255, 255);
+      font-weight: 300;
+      text-align: justify;
+      padding-right: 20px;
     }
+
+    .item-content-img {
+      display: flex;
+      justify-self: end;
+      border-radius: 30px;
+      border: 2px solid rgba(255, 255, 255, 0.441);
+      background-image: url("https://image.cdn2.seaart.me/temp-convert-webp/jpeg/static/c1444dc77e417ca12dbedfbd3e03c34c/1694108713730/39355ebf65c9ac95fca2aa08857012ca_low.webp");
+      background-size: cover;
+      width: 240px;
+      height: 240px; // Adicionei para garantir que a imagem preencha o espaço
+      
+      margin-inline-end: 10px;
+    }
+
+    .item-content-img1 {
+     
+      margin-inline-end: 10px;
+      display: flex;
+      justify-self: end;
+      border-radius: 30px;
+      border: 2px solid rgba(255, 255, 255, 0.441);
+      background-image: url("https://image.cdn2.seaart.me/2024-08-25/cr590gle878c73auvmrg/5291ad573b428352f06daa8dbfadd28c_high.webp");
+      background-size: cover;
+      width: 240px;
+      height: 240px; // Adicionei para garantir que a imagem preencha o espaço
+    }
+
+    .item-content-img2 {
+      margin-inline-end: 10px;
+      display: flex;
+      justify-self: end;
+      border-radius: 30px;
+      border: 2px solid rgba(255, 255, 255, 0.441);
+      background-image: url("https://image.cdn2.seaart.me/2024-01-25/cmp5q2le878c73blim70/c659ab6483265b1fbb3e009a1aaf5412983cbd20_high.webp");
+      background-size: cover;
+      width: 240px;
+      height: 240px; // Adicionei para garantir que a imagem preencha o espaço
+    }
+}
+
+& > .content-2 { // Adicionei o ponto para indicar que é uma classe
+  
+  display: grid;
+  grid-template-columns:  1fr 1fr  1fr 3fr;
+  
+
+
+  .item-content-img3 {
+    display: flex;
+    justify-self: end;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.441);
+    background-image: url("https://image.cdn2.seaart.me/2025-02-27/cuvv3ade878c73aj6ipg-1/2d7eea1d8493f4ed5dfaf77b1d148752_high.webp");
+    background-size: cover;
+    width: 240px;
+    height: 240px; // Adicionei para garantir que a imagem preencha o espaço
+    
+    margin-inline-end: 10px;
+  }
+
+  .item-content-img4 {
+    margin-inline-end: 10px;
+    display: flex;
+    justify-self: end;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.441);
+    background-image: url("https://image.cdn2.seaart.me/2024-12-14/cten7ste878c73a4l24g/abf97b260b530250203645bbe196e07eda47a3b8_high.webp");
+    background-size: cover;
+    width: 240px;
+    height: 240px; // Adicionei para garantir que a imagem preencha o espaço
+  }
+
+  .item-content-img5 {
+    margin-inline-end: 10px;
+    display: flex;
+    justify-self: end;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.441);
+    background-image: url("https://image.cdn2.seaart.me/temp-convert-webp/highwebp/2024-07-16/cqbc16de878c739edov0/935a584c11d8488437be56aa6c47a79ad846d6df_low.webp");
+    background-size: cover;
+    width: 240px;
+    height: 240px; // Adicionei para garantir que a imagem preencha o espaço
   }
 
 
-} 
-
-
-// nova sção 
-
+}
+}
