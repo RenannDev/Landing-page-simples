@@ -15,6 +15,15 @@
 body{
     background-color: #000000;
 }
+html, body {
+  overflow-y: scroll; // Mantém a rolagem vertical ativa
+  -ms-overflow-style: none; // Oculta a barra no Internet Explorer/Edge
+  scrollbar-width: none; // Oculta a barra no Firefox
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none; // Oculta a barra no Chrome, Safari e outros Webkit
+}
 
 .navbar-topo{
   display: flex;
@@ -96,7 +105,6 @@ body{
     content: '';
     position: absolute;
     top: 1.4%;
-    
     width: 20px;
     height: 20px;
     background-image:url("https://img.freepik.com/free-photo/happy-cheerful-female-customer-posing-camera_74855-2837.jpg?t=st=1741304304~exp=1741307904~hmac=ca01ee3cf04f5dc198b602d3d7c2d8e5e9e25b9d46d2a706d0697bfac07e2908&w=1800");
@@ -346,4 +354,190 @@ body{
 
 
 }
+
+.background-animated {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ .servicos{
+  display: flex;
+  margin-top: 3.5rem;
+  width: 90VW;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .titulo-secao-serv{
+    font-family: $fonte-principal; 
+    font-size: 38px;
+    text-align: start;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-weight: 400;
+  }
+  .p-secao-serv{
+    color: white;
+    text-align: justify;
+    width: 800px;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: $fonte-principal;
+  }
+
+ }
+
+ .sobre-serv{
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 3rem;
+  gap: 10px;
+
+
+  ///////////////////////////
+  .card-serv{
+    padding: 1rem;
+    background-color: rgba(40, 40, 40, 0.866);
+    
+    border-radius: 30px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+  
+    ////////////////////////////
+    /// 
+    .span-sobre-serv{
+      width: 162px;
+      height: 44px;
+      border-radius: 60px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.678);
+      border: none;
+      font-family: $fonte-principal;
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding-inline:10px;
+      font-weight: 300;
+    font-size: 1rem;
+    font-family: $fonte-principal;
+    
+  }
+  
+  
+  .span-bg1::before{
+    content: '';
+    position: relative;
+    left: -13px;
+    width:36px;
+    height: 36px;
+      ////////////////////////////
+    background: linear-gradient(90deg, #ff6b6b 10%, #4ecdc4 40%, #45b7d1 70%, #96c93d);
+    animation: rotateGradient 10s infinite ease-in-out;
+    @keyframes rotateGradient {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .span-bg2::before{
+    content: '';
+    position: relative;
+    left: -18px;
+    width:36px;
+    height: 36px;
+      ////////////////////////////
+    background: linear-gradient(45deg, #ffcc00 20%, #ff5733 45%, #c70039, #900c3f);
+    animation: slideGradient 10s infinite ease-in-out;
+    background-size: 200% 200%;
+    @keyframes slideGradient {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    ////////////////////////////
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .span-bg3::before{
+    content: '';
+    position: relative;
+    left: -7px;
+    width:36px;
+    height: 36px;
+      ////////////////////////////
+      background: linear-gradient(135deg, #3498db, #e74c3c, #2ecc71, #f1c40f);
+      animation: pulseColors 6s infinite alternate;
+    
+      @keyframes pulseColors {
+        0% { filter: brightness(100%); }
+        50% { filter: brightness(150%) contrast(120%); }
+        100% { filter: brightness(80%) contrast(90%); }
+      }
+    ////////////////////////////
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .span-bg4::before{
+    content: '';
+    position: relative;
+    left: -7px;
+    width:36px;
+    height: 36px;
+      ////////////////////////////
+      background: linear-gradient(to right, #8e44ad, #3498db, #e67e22, #2ecc71);
+  animation: colorShift 12s infinite;
+
+  @keyframes colorShift {
+    0% { background: linear-gradient(to right, #8e44ad, #3498db, #e67e22, #2ecc71); }
+    25% { background: linear-gradient(to right, #3498db, #e67e22, #2ecc71, #8e44ad); }
+    50% { background: linear-gradient(to right, #e67e22, #2ecc71, #8e44ad, #3498db); }
+    75% { background: linear-gradient(to right, #2ecc71, #8e44ad, #3498db, #e67e22); }
+    100% { background: linear-gradient(to right, #8e44ad, #3498db, #e67e22, #2ecc71); }
+  }
+    ////////////////////////////
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+
+ 
+
+  .h4-sobre-serv{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-family: $fonte-principal;
+  }
+
+  .p-sobre-serv{
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    font-family: $fonte-principal;
+  }
+
+  }
+
+    ///////////////////////////
+
+    
+ }
+
+ 
 }
